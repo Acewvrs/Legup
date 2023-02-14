@@ -13,12 +13,7 @@ public class SkyscrapersCell extends GridCell<SkyscrapersType> {
     }
 
     public SkyscrapersType getType() {
-        switch (data) {
-            case UNKNOWN:
-                return SkyscrapersType.UNKNOWN;
-            default:
-                return SkyscrapersType.Number;
-        }
+        return data;
     }
 
 
