@@ -112,6 +112,7 @@ public class DynamicView extends JPanel {
             JButton plus = new JButton(new ImageIcon(ImageIO.read(
                     Objects.requireNonNull(ClassLoader.getSystemClassLoader().getResource(
                             "edu/rpi/legup/imgs/add.png")))));
+            plus.setFocusPainted(false);
             plus.setFont(MaterialFonts.getRegularFont(10f));
             plus.setPreferredSize(new Dimension(20, 20));
             plus.addActionListener((ActionEvent e) -> zoomSlider.setValue(zoomSlider.getValue() + 25));
@@ -120,6 +121,7 @@ public class DynamicView extends JPanel {
             JButton minus = new JButton(new ImageIcon(ImageIO.read(
                     Objects.requireNonNull(ClassLoader.getSystemClassLoader().getResource(
                             "edu/rpi/legup/imgs/remove.png")))));
+            minus.setFocusPainted(false);
             minus.setPreferredSize(new Dimension(20, 20));
             minus.setFont(MaterialFonts.getRegularFont(10f));
             minus.addActionListener((ActionEvent e) -> zoomSlider.setValue(zoomSlider.getValue() - 25));

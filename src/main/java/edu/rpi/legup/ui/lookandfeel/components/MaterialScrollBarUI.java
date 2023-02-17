@@ -46,7 +46,7 @@ public class MaterialScrollBarUI extends BasicScrollBarUI {
         button.setOpaque(true);
         button.setBackground(UIManager.getColor("ScrollBar.arrowButtonBackground"));
         button.setBorder(UIManager.getBorder("ScrollBar.arrowButtonBorder"));
-
+        button.setFocusPainted(false);
         return button;
     }
 
@@ -57,7 +57,7 @@ public class MaterialScrollBarUI extends BasicScrollBarUI {
         button.setOpaque(true);
         button.setBackground(UIManager.getColor("ScrollBar.arrowButtonBackground"));
         button.setBorder(UIManager.getBorder("ScrollBar.arrowButtonBorder"));
-
+        button.setFocusPainted(false);
         return button;
     }
 }

@@ -163,6 +163,7 @@ public class HomePanel extends LegupPanel {
         for (int i = 0; i < this.buttons.length - 1; i++) { // -1 to avoid the batch grader button
             //this.buttons[i].setPreferredSize(new Dimension(100, 100));
             this.buttons[i].setBounds(200, 200, 700, 700);
+            this.buttons[i].setFocusPainted(false);
         }
         this.buttons[3] = new JButton("Batch Grader");
         this.buttons[3].setHorizontalTextPosition(AbstractButton.CENTER);

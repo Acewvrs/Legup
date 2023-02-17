@@ -205,6 +205,7 @@ public abstract class RulePanel extends JPanel {
         searchBarPanel.add(textField);
         searchBarPanel.add(Box.createRigidArea(new Dimension(1, 0)));
         JButton findButton = new JButton("Go");
+        findButton.setFocusPainted(false);
         ActionListener action = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent event) {

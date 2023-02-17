@@ -58,8 +58,8 @@ public class MaterialSpinnerUI extends BasicSpinnerUI {
         button.setOpaque(true);
         button.setBackground(UIManager.getColor("Spinner.arrowButtonBackground"));
         button.setBorder(UIManager.getBorder("Spinner.arrowButtonBorder"));
+        button.setFocusPainted(false);
         installNextButtonListeners(button);
-
         return button;
     }
 
@@ -77,8 +77,8 @@ public class MaterialSpinnerUI extends BasicSpinnerUI {
         button.setOpaque(true);
         button.setBackground(UIManager.getColor("Spinner.arrowButtonBackground"));
         button.setBorder(UIManager.getBorder("Spinner.arrowButtonBorder"));
+        button.setFocusPainted(false);
         installPreviousButtonListeners(button);
-
         return button;
     }
 }
